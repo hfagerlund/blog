@@ -1,3 +1,8 @@
+/*
+ * cookienotice
+ * @copyright (c) Heini Fagerlund 2017
+ * @version 1.0.0
+ */
 @keyframes slideFadeOut {
   0% { transform:translateY(0); opacity:1;}
   20% { transform:translateY(30px); opacity:.8; }
