@@ -1,0 +1,39 @@
+@keyframes slideFadeOut {
+  0% { transform:translateY(0); opacity:1;}
+  20% { transform:translateY(30px); opacity:.8; }
+  40% { transform:translateY(80px); opacity:.6; }
+  60% { transform:translateY(150px); opacity:.4; }
+  80% { transform:translateY(300px); opacity:.1; }
+  100% { transform:translateY(1000px); opacity:0; }
+}
+
+.hide,.cookieNotice {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    
+    background-color: #cff;
+    border-top: 1px solid #ccc;
+    box-shadow: 0 -5px 2px 0 #333;
+    color: #000;
+    display: block;
+    margin-bottom: 0 !important;
+    padding: 1em;
+    text-align: center;
+    top: auto;
+    z-index: 5000000;
+}
+
+.hide{
+    animation: slideFadeOut 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; /* prevents 'reset' to first keyframe */
+}
+
+.hidden{visibility:hidden}
+
+.cookieNotice__btn{
+background-color:#015170;box-shadow:none;color:#fff;border:1px solid #666;border-radius:20px;font-size:1em;padding:1em 1.5em;text-shadow:none;
+}
+.cookieNotice__btn:hover{background-color:#0cf/*#016589*/;cursor:pointer}
